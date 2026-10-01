@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    --font-poppins:
+        "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    --font-money:
+        "Fraunces", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    --spacing-drawer-width: 300px;
+
+    --color-primary-50: #f0f9fe;
+    --color-primary-100: #deeffb;
+    --color-primary-200: #c4e5f9;
+    --color-primary-300: #9bd5f5;
+    --color-primary-400: #6bbdef;
+    --color-primary-500: #49a1e8;
+    --color-primary-600: #3386dd;
+    --color-primary-700: #2b71cc;
+    --color-primary-800: #295ba4;
+    --color-primary-900: #264e82;
+    --color-primary-950: #1b3050;
+
+    --color-secondary-50: #f8fafc;
+    --color-secondary-100: #f1f5f9;
+    --color-secondary-200: #e2e8f0;
+    --color-secondary-300: #cad5e2;
+    --color-secondary-400: #90a1b9;
+    --color-secondary-500: #62748e;
+    --color-secondary-600: #45556c;
+    --color-secondary-700: #314158;
+    --color-secondary-800: #1d293d;
+    --color-secondary-900: #0f172b;
+    --color-secondary-950: #020618;
+}
+
+@layer base {
+    * {
+        @apply border-slate-200;
+    }
+    html {
+        @apply font-poppins;
+    }
+    body {
+        @apply relative size-full min-h-screen bg-slate-50 text-slate-900 antialiased;
+    }
+}
